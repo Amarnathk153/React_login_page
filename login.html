@@ -1,0 +1,58 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+        
+    <title>Login In</title>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./js/Login.js">
+<link rel="stylesheet" href="./js/Login.css">
+<link rel="stylesheet" href="./Routes.js">
+    <!-- Custom styles for this template -->
+    <link href="./css/signin.css" rel="stylesheet">
+
+  <body class="text-center">
+  
+  <style>
+  .navbar-header {
+    text-align: center;
+    padding : 15px;
+}
+.navbar-brand {float:none;}
+ </style>
+  
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Log in</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li onclick="basic()"><a href="signup.html">SIGN UP</a></li>
+      </ul>
+  </div>
+</nav>
+
+<script>
+function basic(){
+localStorage.setItem("key", "10");
+}
+</script>
+	<form class="form-signin" action="error.html">
+        <h1 class="h3 mb-3 font-weight-normal">Please log in</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus="">
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" >Log in</button>
+    </form>
+     
+
+</body></html>
